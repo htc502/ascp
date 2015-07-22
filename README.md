@@ -48,6 +48,6 @@ as you can see, in order to use ascp directly, you have to know the downloading 
 
    sh ascp.sh AccList.txt 1>ascp.out 2>ascp.err
 
-one more thing to say is that NCBI sra database and sratool kit are both under extensive change, the procedure mentioned above may be deprecated providing that the database or tools interface is changed substantially.  
+one more thing to say is that NCBI sra database and sratool kit are both under extensive change, the procedure mentioned above may be deprecated in the future providing that the database or tools interface is changed substantially. But for now, it works well ~_~ 
 
 That's it, enjoy!
