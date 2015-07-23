@@ -24,13 +24,14 @@ Again you type in an accession number and searched it against the sra database. 
 ![prefetch](img/prefetch.bmp)  
 you will find that you are navigated to the run selector page. The download operation differs depending on whether you are downloading public accessed data or protected data. for publicly accessed data, just select data and download the accession List which is orange colored in the pic below.
 ![accList](img/accessionList.bmp)  
-With the accession list downloaded , you can issue the downloading process by:
+With the accession list downloaded , you can issue the downloading process with prefetch by:
 
      while read acc
      do
      prefetch $acc
      done <Acclist.txt
 
+(prefetch version number 2.5.0)
 One more thing before you can use the prefetch command in the code above is that you have to setup the working directory of sratool kit by `vdb-config -i` command.  For publicly available data, downloading process can be issued anywhere in you file system, the data downloaded will be stored in workdir/public/sra/. But for protected data, issuing the download command outside of the working dir is forbidden and will fail.  
 For protected data, there is a little bit difference. First you will find there be a kart file download button in the page describe above.
 ![kartFile](img/kart.bmp)  
