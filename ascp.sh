@@ -7,7 +7,7 @@ while read line
 do
     srr_prefix=${line:0:6}
     fasp_url=${fasp_base_url}/${srr_prefix}/${line}/${line}.sra
-    if [ -f ${line}.sra ];then
+    if [ -f ${line}.sra -a ! -f ${line}.sra.aspx ];then
 	echo "${line}.sra already exists, skip..."
     else
 	echo "downloading $line"
