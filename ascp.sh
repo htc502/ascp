@@ -1,6 +1,6 @@
 XRR_Acc_file=$1 #XRR for SRR or ERR
 
-fasp_base_url=anonftp@ftp.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/
+fasp_base_url=anonftp@ftp.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra
 aspera_base=/home/hangc/.aspera/connect
 
 while read line
